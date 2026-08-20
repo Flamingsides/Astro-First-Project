@@ -10,7 +10,7 @@ const edata = await fetch("https://jsonplaceholder.typicode.com/todos/1");
 const edata_json = await edata.json();
 ---
 
-<BaseLayout>
+<BaseLayout title="Main Page">
     <h1>Astro</h1>
     {data.map((p) => (
         <p>{p.name}</p>
