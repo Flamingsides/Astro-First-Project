@@ -1,5 +1,6 @@
 ---
 import Link from "../components/Link.astro";
+import "../styles/styles.css";
 
 const { title = "default" } = Astro.props;
 ---
@@ -12,7 +13,6 @@ const { title = "default" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
