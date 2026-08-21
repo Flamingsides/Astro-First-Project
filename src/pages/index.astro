@@ -21,3 +21,15 @@ const edata_json = await edata.json();
 
     {JSON.stringify(edata_json)}
 </BaseLayout>
+
+<!-- Add client-side javascript -->
+<script>
+    const anchors = document.querySelectorAll("a");
+
+    anchors.forEach((anchor) => {
+        anchor.addEventListener(
+            "click",
+            () => console.log(anchor.innerText)
+        );
+    })
+</script>
